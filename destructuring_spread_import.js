@@ -44,9 +44,13 @@ const person = {
 };
 
 // 'Normal' way to access values from an object:
-const age = person.age;
-console.log("Age from person object", age);
+const agePerson = person.age;
+console.log("Age from person object", agePerson);
 
 // Destructuring the object, example - the curly brackets need to contain the key used in the object:
-const {name} = person;
-console.log("Name from person object", name);
+
+// const {name} = person;
+// console.log("Name from person object", name);
+
+const {age, name} = person;
+console.log(`${name} is ${age} years old.`);
